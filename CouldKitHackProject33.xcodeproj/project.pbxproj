@@ -12,6 +12,10 @@
 		378D51341F0D150800E5976A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D51321F0D150800E5976A /* Main.storyboard */; };
 		378D51361F0D150800E5976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378D51351F0D150800E5976A /* Assets.xcassets */; };
 		378D51391F0D150800E5976A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D51371F0D150800E5976A /* LaunchScreen.storyboard */; };
+		378D51411F0D16B400E5976A /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51401F0D16B400E5976A /* RecordWhistleViewController.swift */; };
+		378D51431F0D27DA00E5976A /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51421F0D27DA00E5976A /* SelectGenreViewController.swift */; };
+		378D51451F0D29D300E5976A /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51441F0D29D300E5976A /* AddCommentsViewController.swift */; };
+		378D51471F0D3B8300E5976A /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51461F0D3B8300E5976A /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		378D51351F0D150800E5976A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		378D51381F0D150800E5976A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		378D513A1F0D150800E5976A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378D51401F0D16B400E5976A /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+		378D51421F0D27DA00E5976A /* SelectGenreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
+		378D51441F0D29D300E5976A /* AddCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
+		378D51461F0D3B8300E5976A /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				378D512E1F0D150800E5976A /* AppDelegate.swift */,
 				378D51301F0D150800E5976A /* ViewController.swift */,
+				378D51401F0D16B400E5976A /* RecordWhistleViewController.swift */,
+				378D51421F0D27DA00E5976A /* SelectGenreViewController.swift */,
 				378D51321F0D150800E5976A /* Main.storyboard */,
 				378D51351F0D150800E5976A /* Assets.xcassets */,
 				378D51371F0D150800E5976A /* LaunchScreen.storyboard */,
 				378D513A1F0D150800E5976A /* Info.plist */,
+				378D51441F0D29D300E5976A /* AddCommentsViewController.swift */,
+				378D51461F0D3B8300E5976A /* SubmitViewController.swift */,
 			);
 			path = CouldKitHackProject33;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				378D51311F0D150800E5976A /* ViewController.swift in Sources */,
+				378D51451F0D29D300E5976A /* AddCommentsViewController.swift in Sources */,
 				378D512F1F0D150800E5976A /* AppDelegate.swift in Sources */,
+				378D51431F0D27DA00E5976A /* SelectGenreViewController.swift in Sources */,
+				378D51471F0D3B8300E5976A /* SubmitViewController.swift in Sources */,
+				378D51411F0D16B400E5976A /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
