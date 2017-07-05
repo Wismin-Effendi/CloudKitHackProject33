@@ -102,7 +102,7 @@ class ViewController: UITableViewController {
     }
 
     
-    // MARK: UITableViewDataSource 
+    // MARK: UITableViewDataSource && Delegate
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.whistles.count
@@ -122,6 +122,12 @@ class ViewController: UITableViewController {
         cell.textLabel?.attributedText = makeAttributedString(title: whistles[indexPath.row].genre, subtitle: whistles[indexPath.row].comments)
         cell.textLabel?.numberOfLines = 0
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ResultsViewController()
+        vc.whistle = whistles[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

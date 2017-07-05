@@ -18,6 +18,7 @@
 		378D51471F0D3B8300E5976A /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51461F0D3B8300E5976A /* SubmitViewController.swift */; };
 		378D514B1F0D3DA600E5976A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378D514A1F0D3DA500E5976A /* CloudKit.framework */; };
 		378D514D1F0D462000E5976A /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D514C1F0D462000E5976A /* Whistle.swift */; };
+		378D514F1F0D648B00E5976A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D514E1F0D648B00E5976A /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		378D51481F0D3D9B00E5976A /* CouldKitHackProject33.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CouldKitHackProject33.entitlements; sourceTree = "<group>"; };
 		378D514A1F0D3DA500E5976A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		378D514C1F0D462000E5976A /* Whistle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		378D514E1F0D648B00E5976A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				378D513A1F0D150800E5976A /* Info.plist */,
 				378D51441F0D29D300E5976A /* AddCommentsViewController.swift */,
 				378D514C1F0D462000E5976A /* Whistle.swift */,
+				378D514E1F0D648B00E5976A /* ResultsViewController.swift */,
 			);
 			path = CouldKitHackProject33;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				378D514D1F0D462000E5976A /* Whistle.swift in Sources */,
 				378D51471F0D3B8300E5976A /* SubmitViewController.swift in Sources */,
 				378D51411F0D16B400E5976A /* RecordWhistleViewController.swift in Sources */,
+				378D514F1F0D648B00E5976A /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
