@@ -23,6 +23,14 @@ class ViewController: UITableViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Genres", style: .plain, target: self, action: #selector(selectGenre))
+        
+    }
+    
+    func selectGenre() {
+        let vc = MyGenresViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {
