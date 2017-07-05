@@ -16,6 +16,8 @@
 		378D51431F0D27DA00E5976A /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51421F0D27DA00E5976A /* SelectGenreViewController.swift */; };
 		378D51451F0D29D300E5976A /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51441F0D29D300E5976A /* AddCommentsViewController.swift */; };
 		378D51471F0D3B8300E5976A /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D51461F0D3B8300E5976A /* SubmitViewController.swift */; };
+		378D514B1F0D3DA600E5976A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378D514A1F0D3DA500E5976A /* CloudKit.framework */; };
+		378D514D1F0D462000E5976A /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D514C1F0D462000E5976A /* Whistle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		378D51421F0D27DA00E5976A /* SelectGenreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
 		378D51441F0D29D300E5976A /* AddCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
 		378D51461F0D3B8300E5976A /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		378D51481F0D3D9B00E5976A /* CouldKitHackProject33.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CouldKitHackProject33.entitlements; sourceTree = "<group>"; };
+		378D514A1F0D3DA500E5976A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		378D514C1F0D462000E5976A /* Whistle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378D514B1F0D3DA600E5976A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +54,7 @@
 			children = (
 				378D512D1F0D150800E5976A /* CouldKitHackProject33 */,
 				378D512C1F0D150800E5976A /* Products */,
+				378D51491F0D3DA500E5976A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,18 +69,28 @@
 		378D512D1F0D150800E5976A /* CouldKitHackProject33 */ = {
 			isa = PBXGroup;
 			children = (
+				378D51481F0D3D9B00E5976A /* CouldKitHackProject33.entitlements */,
 				378D512E1F0D150800E5976A /* AppDelegate.swift */,
 				378D51301F0D150800E5976A /* ViewController.swift */,
 				378D51401F0D16B400E5976A /* RecordWhistleViewController.swift */,
 				378D51421F0D27DA00E5976A /* SelectGenreViewController.swift */,
+				378D51461F0D3B8300E5976A /* SubmitViewController.swift */,
 				378D51321F0D150800E5976A /* Main.storyboard */,
 				378D51351F0D150800E5976A /* Assets.xcassets */,
 				378D51371F0D150800E5976A /* LaunchScreen.storyboard */,
 				378D513A1F0D150800E5976A /* Info.plist */,
 				378D51441F0D29D300E5976A /* AddCommentsViewController.swift */,
-				378D51461F0D3B8300E5976A /* SubmitViewController.swift */,
+				378D514C1F0D462000E5976A /* Whistle.swift */,
 			);
 			path = CouldKitHackProject33;
+			sourceTree = "<group>";
+		};
+		378D51491F0D3DA500E5976A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				378D514A1F0D3DA500E5976A /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +127,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = WZFHSP6QD4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -153,6 +178,7 @@
 				378D51451F0D29D300E5976A /* AddCommentsViewController.swift in Sources */,
 				378D512F1F0D150800E5976A /* AppDelegate.swift in Sources */,
 				378D51431F0D27DA00E5976A /* SelectGenreViewController.swift in Sources */,
+				378D514D1F0D462000E5976A /* Whistle.swift in Sources */,
 				378D51471F0D3B8300E5976A /* SubmitViewController.swift in Sources */,
 				378D51411F0D16B400E5976A /* RecordWhistleViewController.swift in Sources */,
 			);
@@ -277,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CouldKitHackProject33/CouldKitHackProject33.entitlements;
 				DEVELOPMENT_TEAM = WZFHSP6QD4;
 				INFOPLIST_FILE = CouldKitHackProject33/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -290,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CouldKitHackProject33/CouldKitHackProject33.entitlements;
 				DEVELOPMENT_TEAM = WZFHSP6QD4;
 				INFOPLIST_FILE = CouldKitHackProject33/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
